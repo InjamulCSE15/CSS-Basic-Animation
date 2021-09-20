@@ -12,7 +12,7 @@ body {
 
 .main {
     display: flex;
-
+    
 }
 
 .exampleOne {
@@ -60,6 +60,39 @@ body {
     animation-iteration-count: 3;
 }
 
+.main-2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.exampleFive {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    background: #000;
+    margin: 5rem 1rem;
+    animation: exampleFive;
+    animation-duration: 8s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+
+.exampleSix {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    background: #000;
+    margin: 5rem 1rem;
+    animation: exampleFive;
+    animation-duration: 8s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
 h3 {
     font-size: 1.5rem;
     color: #fff;
@@ -97,4 +130,20 @@ h3 {
     50% { background: black; left: 0px; top: 200px;}
     75% { background: #6E6E6C; left: 0px; bottom: 200px;}
     100% { background: red; left: 0px; top: 0px; bottom: 0px;}
+}
+
+@keyframes exampleFive {
+    0% { background: red; left: 0px; top: 0px;}
+    25% { background: yellow; left: 200px; top: 0px;}
+    50% { background: blue; left: 200px; top: 200px;}
+    75% { background: #6E6E6C; left: 0px; top: 200px;}
+    100% { background: red; left: 0px; top: 0px;}
+}
+
+@keyframes exampleSix {
+    0% { background: red; left: 0px; top: 0px;}
+    25% { background: yellow; left: 200px; top: 0px;}
+    50% { background: blue; left: 200px; top: 200px;}
+    75% { background: #6E6E6C; left: 0px; top: 200px;}
+    100% { background: red; left: 0px; top: 0px;}
 }
