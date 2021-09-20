@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.css-animation {
+    width: auto;
+    height: 60vh;
+    text-align: center;
+    background: red;
+    margin: 5rem;
+    animation: colorChanging;
+    animation-duration: 4s;
+}
+
+@keyframes colorChanging {
+    from {
+        background: red;
+    }
+    to {
+        background: chartreuse;
+    }
+}
