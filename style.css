@@ -1,24 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.css-animation {
-    width: auto;
-    height: 60vh;
-    text-align: center;
-    background: red;
-    margin: 5rem;
-    animation: colorChanging;
-    animation-duration: 4s;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
-@keyframes colorChanging {
+.main {
+    display: flex;
+
+}
+
+.exampleOne {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    background: rgb(17, 0, 255);
+    margin: 5rem 1rem;
+    animation: exampleOne;
+    animation-duration: 10s;
+}
+
+.exampleTwo {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    background: #00203f;
+    margin: 5rem 1rem;
+    animation: exampleTwo;
+    animation-duration: 10s;
+}
+
+.exampleThree {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    background: #6E6E6C;
+    margin: 5rem 1rem;
+    animation: exampleThree;
+    animation-duration: 10s;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 6.5rem 0;
+}
+
+@keyframes exampleOne {
     from {
-        background: red;
+        background: rgb(17, 0, 255);
     }
     to {
         background: chartreuse;
     }
+}
+
+@keyframes exampleTwo {
+    0% { background: #00203f; }
+    25% { background: #0063B1; }
+    50% { background: #ADF0D1; }
+    75% { background: #2bae68;}
+    100% { background: #6E6E6C;}
+}
+
+@keyframes exampleThree {
+    0% { background: #6E6E6C; left: 0px; top: 0px;}
+    25% { background: #2bae68; left: 200px; top: 0px;}
+    50% { background: #ADF0D1; left: 200px; top: 200px;}
+    75% { background: #0063B1; left: 0px; top: 200px;}
+    100% { background: #00203f; left: 0px; top: 0px;}
 }
